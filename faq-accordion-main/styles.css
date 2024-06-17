@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image: url(/assets/images/background-pattern-desktop.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #f9eeff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Work Sans", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+/* end of css reset */
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+}
+
+label:hover {
+  color: #ae28e8;
+}
+section {
+  height: 0;
+  transition: 0.3s all;
+  overflow: hidden;
+  border-bottom: 2px solid lightgrey;
+}
+section:nth-last-child(1) {
+  border-bottom: 0;
+  margin-bottom: -1.5rem !important;
+  padding-bottom: 0 !important;
+}
+
+#toggle1:checked ~ #content1,
+#toggle2:checked ~ #content2,
+#toggle3:checked ~ #content3,
+#toggle4:checked ~ #content4 {
+  height: fit-content;
+}
+
+.togglebox {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: ceter;
+}
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+p {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+
